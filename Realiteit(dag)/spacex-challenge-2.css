@@ -1,0 +1,153 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+::-webkit-scrollbar {
+  display: none; }
+
+a.dashboardButton {
+  background-color: #28B3FF;
+  font-size: 14pt;
+  border: none;
+  padding: 20px;
+  border-radius: 100px; }
+  @media only screen and (max-width: 450px) {
+    a.dashboardButton {
+      margin-top: 20px; } }
+
+h1 {
+  font-size: 25pt;
+  white-space: nowrap; }
+  @media only screen and (min-width: 800px) {
+    h1 {
+      white-space: normal; } }
+
+h2 {
+  font-size: 20pt;
+  white-space: nowrap; }
+  @media only screen and (max-width: 800px) {
+    h2 {
+      white-space: normal; } }
+
+h3 {
+  font-size: 18pt;
+  white-space: nowrap; }
+  @media only screen and (min-width: 800px) {
+    h3 {
+      white-space: normal; } }
+
+p {
+  font-size: 14pt; }
+
+#offCanvasSun, #offCanvasSunset, #offCanvasMoon {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  transform: translateX(50%) translateY(-50%);
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 0s; }
+  @media only screen and (max-width: 600px) {
+    #offCanvasSun, #offCanvasSunset, #offCanvasMoon {
+      transform: translateX(20%) translateY(20%);
+      right: unset;
+      top: unset; } }
+
+body {
+  background: #0D0B0F; }
+  body main.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden; }
+    @media only screen and (max-width: 450px) {
+      body main.container {
+        padding: 10px; } }
+    @media only screen and (min-width: 1500px) {
+      body main.container {
+        height: 100%;
+        overflow: visible; } }
+    body main.container header {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+      @media only screen and (max-width: 450px) {
+        body main.container header {
+          width: 100%; } }
+      body main.container header h2 {
+        color: #5E5C66;
+        margin-top: 10px; }
+    body main.container section#dashboard {
+      border-radius: 50px;
+      margin-top: 30px;
+      overflow-x: visible;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center; }
+      body main.container section#dashboard > section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px 0px 20px; }
+        @media only screen and (max-width: 450px) {
+          body main.container section#dashboard > section {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px; } }
+        body main.container section#dashboard > section > section h1 {
+          margin-bottom: 10px; }
+      body main.container section#dashboard section#dashboard-inner {
+        margin: 100px 20px 20px 20px;
+        border-radius: 50px;
+        padding: 0px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-transition: background-image 20s ease-in-out;
+        transition: background-image 20s ease-in-out; }
+        @media only screen and (max-width: 450px) {
+          body main.container section#dashboard section#dashboard-inner {
+            margin: 100px 0px 0px 0px; } }
+        body main.container section#dashboard section#dashboard-inner > section {
+          text-align: center;
+          padding: 100px; }
+          body main.container section#dashboard section#dashboard-inner > section > h1 {
+            margin-bottom: 30px; }
+          body main.container section#dashboard section#dashboard-inner > section article {
+            padding: 150px;
+            margin: 100px;
+            background-color: black;
+            border-radius: 50px;
+            position: relative; }
+            @media only screen and (max-width: 1000px) {
+              body main.container section#dashboard section#dashboard-inner > section article {
+                padding: 60px; } }
+            @media only screen and (max-width: 450px) {
+              body main.container section#dashboard section#dashboard-inner > section article {
+                padding: 40px; } }
+            body main.container section#dashboard section#dashboard-inner > section article h1#timeText {
+              font-size: 60pt; }
+              @media only screen and (max-width: 720px) {
+                body main.container section#dashboard section#dashboard-inner > section article h1#timeText {
+                  font-size: 40pt; } }
+    body main.container p.footer {
+      width: 100%;
+      text-align: center;
+      color: #5E5C66;
+      padding: 20px 0px; }
